@@ -34,13 +34,13 @@ variable "firewall_policy_id" {
 variable "dns_servers" {
   type        = list(string)
   description = "The list of DNS servers to use for the firewall."
-  default     = []
+  default     = null
 }
 
 variable "private_ip_ranges" {
   type        = list(string)
   description = "The list of private IP ranges to use for the firewall."
-  default     = []
+  default     = null
 }
 
 variable "threat_intel_mode" {
